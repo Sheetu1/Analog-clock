@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    .clock {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 50%;
+        .numbers {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            .number {
+                font-size: 30px;
+                font-weight: 600;
+                height: 100%;
+                position: absolute;
+              
+            }
+            .one {
+                transform: rotate(30deg);
+                span {
+                    transform: rotate(-30deg);
+                    position: absolute;
+                }
+            }
+            .two {
+                transform: rotate(60deg);
+                span {
+                    transform: rotate(-60deg);
+                    position: absolute;
+                }
+            }
+            .three {
+                transform: rotate(90deg);
+                span {
+                    transform: rotate(-90deg);
+                    position: absolute;
+                }
+            }
+            .four {
+                transform: rotate(120deg);
+                span {
+                    transform: rotate(-120deg);
+                    position: absolute;
+                }
+            }
+            .five {
+                transform: rotate(150deg);
+                span {
+                    transform: rotate(-150deg);
+                    position: absolute;
+                }
+            }
+            .six {
+                transform: rotate(180deg);
+                span {
+                    transform: rotate(-180deg);
+                    position: absolute;
+                }
+            }
+            .seven {
+                transform: rotate(210deg);
+                span {
+                    transform: rotate(-210deg);
+                    position: absolute;
+                }
+            }
+            .eight {
+                transform: rotate(240deg);
+                span {
+                    transform: rotate(-240deg);
+                    position: absolute;
+                }
+            }
+            .nine {
+                transform: rotate(270deg);
+                span {
+                    transform: rotate(-270deg);
+                    position: absolute;
+                }
+            }
+            .ten {
+                transform: rotate(300deg);
+                span {
+                    transform: rotate(-300deg);
+                    position: absolute;
+                }
+            }
+            .eleven {
+                transform: rotate(330deg);
+                span {
+                    transform: rotate(-330deg);
+                    position: absolute;
+                }
+            }
+            .twelve {
+                transform: rotate(360deg);
+                span {
+                    transform: rotate(-3600deg);
+                    position: absolute;
+                }
+            }
+            
+        }
+
+        .hands {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            background-color:rgba(128, 128, 128, 0.331);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+    
+            .seconds {
+                height: 40%;
+                width: 3px;
+                background-color: red;
+                transform: translateY(-50%) rotate(0);
+                position: absolute;
+                border-radius: 20px;
+            }
+            .minutes {
+                height: 40%;
+                width: 3px;
+                background-color:blue;
+                transform: translateY(-50%) rotate(0);
+                position: absolute;
+                border-radius: 20px;
+            }
+            .hours {
+                height: 40%;
+                width: 5px;
+                background-color:green;
+                transform: translateY(-50%) rotate(0);
+                position: absolute;
+                border-radius: 20px;
+            }
+        }
+    }
+    
+}

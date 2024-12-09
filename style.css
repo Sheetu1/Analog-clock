@@ -155,4 +155,12 @@ html, body {
   transform: translateY(-50%) rotate(0);
   position: absolute;
   border-radius: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+@media(max-width:600px){
+    #main{
+        .clock{
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
